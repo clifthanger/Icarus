@@ -1,0 +1,4 @@
+{
+  "watch": ["core"],
+  "ignore": ["sessions", "node_modules"]
+}

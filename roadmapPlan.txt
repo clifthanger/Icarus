@@ -1,0 +1,42 @@
+my-whatsapp-saas/
+│
+├─ bots/                     # PARA BOT (worker)
+│   ├─ botManager.js         # spawn / matikan bot
+│   ├─ baileysClient.js      # wrapper baileys
+│   └─ sessions/             # folder auth masing2 client
+│
+├─ backend/                  # API SERVER
+│   ├─ api/
+│   │   ├─ sendMessage.js
+│   │   ├─ webhookHandler.js
+│   │   ├─ auth.js
+│   │   └─ client.js
+│   │
+│   ├─ middleware/
+│   │   └─ verifyToken.js    # cek API token client
+│   │
+│   ├─ models/               # DATABASE SCHEMA
+│   │   ├─ Client.js
+│   │   ├─ ChatHistory.js
+│   │   └─ Rule.js
+│   │
+│   └─ server.js
+│
+├─ dashboard/                # FRONTEND ADMIN PANEL
+│   ├─ pages/
+│   │   ├─ login.jsx
+│   │   ├─ dashboard.jsx
+│   │   ├─ clients.jsx
+│   │   ├─ history.jsx
+│   │   └─ rules.jsx
+│   └─ ...
+│
+├─ scripts/                  # custom command (plugin)
+│   ├─ cekSaldo.js
+│   ├─ aiReply.js
+│   └─ cekCuaca.js
+│
+└─ database/
+    ├─ mongo.js
+    ├─ prisma/ (kalau SQL)
+    └─ seed.js
